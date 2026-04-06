@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <title>Conflict monitoring</title>
+  <rect width="32" height="32" rx="8" fill="#1e3a8a"/>
+  <!-- Heater shield (heraldic) — reads as defense / ops, not a UI close control -->
+  <path
+    fill="#f8fafc"
+    d="M16 5.5c3.8 1.4 7.8 2.6 9.25 3.2V17c0 4.6-3.4 9.6-9.25 12.8C10.15 26.6 6.75 21.6 6.75 17V8.7C8.2 8.1 12.2 6.9 16 5.5z"
+  />
+  <!-- Accent: stylized “map pin / focal point” for monitoring -->
+  <circle cx="16" cy="15" r="3.25" fill="none" stroke="#1e3a8a" stroke-width="1.35"/>
+  <circle cx="16" cy="15" r="1.15" fill="#1e3a8a"/>
+</svg>

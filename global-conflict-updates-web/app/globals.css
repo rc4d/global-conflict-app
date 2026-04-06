@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Manual dark mode: requires `class="dark"` on an ancestor (next-themes sets this on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}

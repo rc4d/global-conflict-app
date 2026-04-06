@@ -1,0 +1,13 @@
+# Dev MongoDB — start Docker Desktop, then: npm run mongo:up
+services:
+  mongo:
+    image: mongo:7
+    container_name: global-conflict-mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - conflict-mongo-data:/data/db
+    restart: unless-stopped
+
+volumes:
+  conflict-mongo-data:
