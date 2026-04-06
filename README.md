@@ -46,9 +46,9 @@ Run the API before using features that call the backend. The web app expects the
 
 ## Deploy the web app to Vercel
 
-The repository includes a root [`vercel.json`](vercel.json) with `"rootDirectory": "global-conflict-updates-web"` so Vercel builds the Next.js app from the monorepo without moving folders.
+This monorepo keeps the Next.js app under `global-conflict-updates-web/`. Vercel does not accept `rootDirectory` in root `vercel.json` for this flow; set the app folder in project settings instead.
 
-1. **Create a Vercel project** — In the [Vercel dashboard](https://vercel.com/new), import [**rc4d/global-conflict-app**](https://github.com/rc4d/global-conflict-app). Framework: Next.js (auto-detected). The root `vercel.json` sets the app directory; you can also set **Root Directory** to `global-conflict-updates-web` in Project Settings if you prefer (equivalent for this layout).
+1. **Create a Vercel project** — In the [Vercel dashboard](https://vercel.com/new), import [**rc4d/global-conflict-app**](https://github.com/rc4d/global-conflict-app). Framework: Next.js (auto-detected). Set **Root Directory** to **`global-conflict-updates-web`** (during import or under **Project Settings → General**). Required so builds use the Next.js app, not the repo root.
 
 2. **Production environment variables** (Vercel → Project → Settings → Environment Variables). Use at least:
 
